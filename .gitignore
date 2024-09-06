@@ -2,6 +2,8 @@
 .import/
 export.cfg
 export_presets.cfg
+.godot/
+addons/godot-vim/
 
 # Imported translations (automatically generated from CSV files)
 *.translation
