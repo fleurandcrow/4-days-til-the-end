@@ -1,0 +1,94 @@
+Day 2\: Are you ready to face her again?
+- Yes
+	Now go to the park.
+- No
+	You still have to go see her. It was your idea to try and save that cat, remember?
+[background arg="res://assets/art/backgrounds/park.png" fade="0.0"]
+You arrive at the park. Petra is already waiting for you.
+join Petra (petra_wave) 2
+Petra (petra_wave): Miles! You came early after all!
+update Petra (petra_neutral)
+Miles: Well it's great to see Cyclops is doing well!
+Suddenly, Cyclops jumps out of Petra's hands.
+Petra (petra_scared): Hey! Cyclops! Wait!
+The cat runs towards the other side of the street.
+Petra (petra_worried): No, Cyclops! That's dangerous!
+Petra (petra_talk): Come on. let's go after her!
+You cross the street with her and find Cyclops with a rat in her mouth.
+[background fade="0.0"]
+Petra (petra_excusmi): Ew... Get that thing out of here...
+[background fade="0.0"]
+Petra (petra_worried): What would I do if I seriously lost you?
+- Suggest she put her confact information to the cat's collar.
+	update Petra
+	Miles: Many pet owners put their contact information on their fluffy friend's collar.
+	Miles: It's so that if they get lost, anyone who finds them can take them back where they belong!
+	Petra (petra_happy): That's a great idea! I'll definitely do it as soon as I get home!
+	Miles: (Thinking) If the cat gets found after the disaster, authorities might be able to contact her...
+	set {convince_count} += 5
+- Suggest she buy her cat a leash.
+	Miles: You can buy her a leash so she can't get away when you walk her around anymore.
+	Petra (petra_talk): Oh I will...
+	set {convince_count} += 3
+- That's silly, cats can't get lost!
+	update Petra (petra_neutral)
+	Seriously, that's what you're going with?
+	jump After the choices..
+Petra (petra_happy): Cyclops, you're definitely not getting away!
+label After the choices..
+set {choice_count} += 1
+update Petra
+Miles: Let's go back to the park.
+You walk back to the park with her.
+[background arg="res://assets/art/backgrounds/park.png" fade="0.0"]
+Petra (petra_scared): Man, Cyclops loves to go outside but this kind of thing really worries me!
+Miles: Do you often just carry her in your arms like that?
+Petra (petra_happy): Yeah, it's how I get her around.
+Petra (petra_excusmi): It can get pretty tiring carrying her around...
+- Explaint to her why she should get a cat carrier.
+	update Petra (petra_neutral)
+	Miles: A cat carrier is a really good solution for your problems.
+	Miles: This way, she won't run away and she'll have a comfortable place to lay down.
+	set {day_specific.got_carrier} = true
+	set {convince_count} += 5
+- Tell her to get a cat carrier.
+	update Petra
+	Miles: You should get a cat carrier.
+	set {day_specific.got_carrier} = true
+	set {convince_count} += 3
+- Isn't the weather nice?
+	update Petra (petra_neutral)
+	Miles: Isn't the weather nice?
+	Come on now...
+	Petra (petra_happy): It is! It's also sunny here!
+	jump After the cat carrier part
+Miles: (Thinking) A carrier also doubles as a bed during emergencies, and can contain a few rations for the cat.
+Petra (petra_excusmi): I've seen those around before but I'm kind of worried about the cost...
+- The extra cost brings peace of mind.
+	update Petra (petra_neutral)
+	Miles: Do you think the peace of mind is worth the extra cost?
+	Petra (petra_worried): I guess it is...
+	Petra (petra_happy): Well, I'll think about it...
+	set {convince_count} += 5
+- The convience outweights the costs.
+	update Petra
+	Miles: It's convenient, so what if you spend some money?
+	Petra (petra_scared): Yeah, but it's still costly.
+	set {convince_count} += 3
+- It's just a little money!
+	update Petra (petra_neutral)
+	Miles: They're not that expensive...
+	Petra (petra_excusmi): Yes, but I really can't afford to randomly spend my money on something costly like that.
+update Petra (petra_neutral)
+Miles: Besides, it can carry food just in case Cyclops gets hungry.
+Petra (petra_talk): I'll see if I can find a cheaper one...
+leave Petra
+label After the cat carrier part
+set {choice_count} += 2
+[background fade="0.0"]
+if {day_specific.got_carrier} == true:
+	The day has come to an end. You managed to get her on board with your idea. Good job.
+else:
+	You really did nothing today, didn't you?
+[wait_input]
+jump day3/

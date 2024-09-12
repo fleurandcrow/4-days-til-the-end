@@ -1,0 +1,83 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+"_translation_id": "",
+"color": Color(1, 1, 1, 1),
+"custom_info": {
+"sound_mood_default": "",
+"sound_moods": {},
+"style": ""
+},
+"default_portrait": "petra_neutral",
+"description": "A girl who really loves her cat",
+"display_name": "{petra_name}",
+"mirror": false,
+"nicknames": ["Petra"],
+"offset": Vector2(0, 0),
+"portraits": {
+"petra_excusmi": {
+"export_overrides": {
+"image": "\"res://assets/art/petra_sprites/petra_excusmi.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"petra_happy": {
+"export_overrides": {
+"image": "\"res://assets/art/petra_sprites/petra_happy.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"petra_neutral": {
+"export_overrides": {
+"image": "\"res://assets/art/petra_sprites/petra_neutral.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"petra_scared": {
+"export_overrides": {
+"image": "\"res://assets/art/petra_sprites/petra_scared.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"petra_talk": {
+"export_overrides": {
+"image": "\"res://assets/art/petra_sprites/petra_talk.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"petra_wave": {
+"export_overrides": {
+"image": "\"res://assets/art/petra_sprites/petra_wave.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"petra_worried": {
+"export_overrides": {
+"image": "\"res://assets/art/petra_sprites/petra_worried.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
+"scale": 1.0
+}

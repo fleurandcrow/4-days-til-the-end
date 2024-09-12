@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://70o004q575lo"]
+
+[ext_resource type="Script" path="res://scripts/dialogs.gd" id="1_7kbqn"]
+
+[node name="Dialogs" type="Node"]
+script = ExtResource("1_7kbqn")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+offset_right = 124.0
+grow_vertical = 0
+text = "Press esc to exit"

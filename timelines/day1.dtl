@@ -1,0 +1,94 @@
+[background arg="res://assets/art/backgrounds/park.png" fade="0.0"]
+join Miles 2
+Miles (precognition): In 4 days, this city will be no more.
+[background arg="res://assets/art/backgrounds/park_flooded.png" fade="0.0"]
+Miles: The flood will destroy everything.
+Miles: I've known it for quite a while, but there's nothing I can do about it.
+Miles: After all, if someone were to find out about my ability...
+Miles: The price would be too costly to pay.
+leave Miles
+[background fade="0.0"]
+Cat: meow~...
+[wait time="3.0"]
+Miles: ...
+[background arg="res://assets/art/backgrounds/park.png" fade="0.0"]
+join Petra (petra_scared) 2
+Petra (petra_scared): I'm so sorry! She keeps running away randomly!
+Petra (petra_happy): C'mere Cyclops!
+set {cat_name} = "Cyclops"
+Cat: meow!
+update Petra (petra_neutral)
+The girl takes the cat and puts it on her shoulder.
+Miles: Have you had him for a while?
+Petra (petra_happy): Oh! Cyclops is a she, and I've had her for a year!
+Petra (petra_excusmi): She's really good at running away though...
+set {petra_name} = "Petra"
+Petra (petra_wave): I almost forgot! The name's Petra, and you?
+Miles: I'm Miles.
+Petra (petra_talk): It is nice to meet you. How about we exchange contacts?
+update Petra (petra_neutral)
+Miles: Alright then...
+You give her your phone number.
+Petra (petra_happy): Wanna pet her?
+Petra holds up the cat.
+Miles: (Thinking) Pets don't often survive natural disasters though...
+Miles: (Thinking) Most of the time, the owners leave in a rush, alone. Leaving their beloved pets behind.
+Miles: (Thinking) Imagining her cry as she realizes her cat is no longer with her is not a pleasant thought...
+Miles: (Thinking) Perhaps I could steer her in the right direction...
+Miles: You mentioned your cat runs away a lot?
+Petra (petra_talk): Yes. When I walk her around the park and go on my phone, she runs off somewhere far!
+- Tell her to pay more attention to her cat.
+	Miles: Perhaps you should pay attention to her more.
+	Petra (petra_scared): But I only check my phone for a few times! Not long at all!
+	set {convince_count} += 5
+	set {choice_count} += 1
+- Tell her she's addicted to her phone.
+	Miles: Have you been spending too much time on your phone?
+	Petra (petra_excusmi): No, I haven't! My screen time is only 5 hours a day!
+	set {convince_count} += 3
+	set {choice_count} += 1
+- That's just how cats are.
+	Miles: Cats are just like that aren't they? There's nothing much you can do about it.
+	Petra (petra_excusmi): Yeah... She's always been like that.
+	Are you even trying to convince her?
+	set {choice_count} += 1
+	jump Post-Choice
+Miles: But regardless of what you think, you should definitely spend less time on it around your cat.
+Petra (petra_worried): Got it...
+She seems quite dissapointed, but it seems like she got your memo.
+- Tell her a fact about cats.
+	Miles: Cats are adventurous creatures, they can easily escape when their owners aren't looking, even if it's just for a split second.
+	Petra (petra_talk): Alright... I'll try to not go on my phone when I take Cyclops with me...
+	Petra (petra_excusmi): I guess that's just how they are, huh?
+	She'll definitely keep your words in mind when she takes her cat out.
+	set {convince_count} += 5
+	set {choice_count} += 1
+- Tell her a harsh truth.
+	Miles: You know, if you keep being careless, that cat of yours will get lost before you know it.
+	Petra (petra_worried): I don't want to lose her though...
+	Miles: Then pay attention to her.
+	Petra (petra_excusmi): Yes, you're right. I'll watch her closely.
+	You've hit her hard, but she had to hear the truth, right?
+	set {convince_count} += 3
+	set {choice_count} += 1
+- Don't tell her anything.
+	update Petra (petra_excusmi)
+	She's definitely charmed by your lack of response...
+	set {choice_count} += 1
+label Post-Choice
+Petra (petra_excusmi): I should get going, I have some cleaning to do at home. How about we see each other again tomorrow?
+Miles: (Thinking) I wasn't planning to go out, but considering this city will be no more, I might as well enjoy its final days.
+Miles: That's fine with me.
+Petra (petra_wave): See you tomorrow then!
+Petra walks away holding her cat.
+leave Petra
+[background fade="0.0"]
+The day is over.
+if {convince_count} > 4*{choice_count}:
+	You managed to convincer her after all.
+elif {convince_count} >= 2*{choice_count}:
+	You barely convinced her.
+else:
+	Petra got your number but you still have a long way to go.
+[wait_input]
+jump day2/

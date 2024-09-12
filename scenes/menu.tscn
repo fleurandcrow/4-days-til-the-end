@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://b27n8if8hwg04"]
+
+[node name="Menu" type="Control"]
+z_index = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+modulate = Color(1, 1, 1, 0.505882)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Protip" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -172.0
+offset_top = -26.0
+offset_right = 172.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Protip: Your progress is saved automatically!"
+
+[node name="VolControl" type="HSlider" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -288.0
+offset_top = -328.0
+offset_right = 374.0
+offset_bottom = -312.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Volume" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -368.0
+offset_top = -336.0
+offset_right = -309.0
+offset_bottom = -313.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Volume"

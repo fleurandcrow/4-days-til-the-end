@@ -1,0 +1,43 @@
+Day 3\: You meet with her at the park again.
+[background arg="res://assets/art/backgrounds/park.png" fade="0.0"]
+join Petra (petra_happy) 2
+Petra (petra_happy): Miles! Did you know that Cyclops gets super clingy when she's sick?
+update Petra (petra_neutral)
+Miles: No, I didn't.
+Petra (petra_talk): Cyclops actually gets sick pretty often. She easily gets a cold or injured from running into things.
+Petra (petra_excusmi): It gets real expensive...
+Miles: Don't you have an insurance for her?
+Petra (petra_happy): Animals don't have insurance, silly!
+Miles: Actually, they can.
+Petra (petra_scared): Wait, really?
+Miles: You can actually sign up for one.
+Petra (petra_excusmi): I didn't know that...
+- Give her examples as to how it would be helpful.
+	Miles: If you have an insurance for Cyclops, you'll have an easier time paying for expenses when she gets sick.
+	set {convince_count} += 5
+- Compare humans and animals.
+	Miles: You have one for yourself, right? Well it's basically the same thing but for your cat.
+	set {convince_count} += 3
+- Just tell her to get one.
+	Miles: You should get one right now.
+set {choice_count} += 1
+update Petra (petra_neutral)
+Miles: (Thinking) An insurance should give the cat a better chance at survival...
+Miles: Pets are often overlooked when it comes to healthcare, but their health and happiness is just as important, isn't it?
+Petra nods
+if {convince_count} >= 3*{choice_count}:
+	Petra (petra_happy): I'll try to get one then. This way, Cyclops getting sick won't get so expensive.
+else:
+	Petra (petra_talk): I'll think about it...
+Miles: You should definitely consider it.
+update Petra (petra_neutral)
+Miles: I have to go.
+update Petra (petra_wave)
+You smile and wave at her.
+Miles: Enjoy every moment with her, alright?
+leave Petra
+You walk away, questioning whether it was the right thing to say.
+[background fade="0.0"]
+The day is over. Tomorrow will be the last day of calm.
+[wait_input]
+jump day4/

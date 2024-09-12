@@ -1,0 +1,54 @@
+It's the last day before the storm. You walk around the park, taking in the beautiful scenery before it dissapears forever.
+[background arg="res://assets/art/backgrounds/park.png" fade="0.0"]
+You feel someone behind you
+join Petra (petra_wave) 2
+Petra (petra_wave): Miles! You're here!
+update Petra (petra_neutral)
+Go on, talk to her. It's your last chance to do so after all.
+Miles: What have you been up to today?
+Petra (petra_scared): Man, Cyclops keeps scratching my sofa!
+update Petra (petra_neutral)
+- Does the cat need to take its energy elsewhere?
+	Miles: Perhaps she hasn't been able to let out all of her energy, so she's taking it out on your sofa.
+- Is the cat bored?
+	Miles: Perhaps she's feeling bored?
+Petra (petra_excusmi): Maybe, she loves to play and walk all over the place, but I can't risk getting her in danger!
+update Petra (petra_neutral)
+You smile at those words. Can she prove them tomorrow?
+Miles: How about getting her some toys to keep her entertained?
+Petra (petra_happy): Good idea!
+leave Petra
+Petra excitedly holds your hand, dragging you to the pet store with her.
+join Petra (petra_happy) 2
+[background fade="0.0"]
+Petra (petra_happy): Hmm... What toy should I get her?
+update Petra (petra_neutral)
+- A blue one.
+	Miles: A blue one, cat can see blue better.
+- A soft one.
+	Miles: A soft one, so she can make biscuits on it.
+Petra (petra_wave): Ah hah! I found the perfect one! Let's get that one!
+She shows you a blue robot plushie, oddly similar to the logo of a certain game engine...
+Petra (petra_happy): Come to my place! You have to see what her reaction's gonna be!
+leave Petra
+You walk together to her place.
+[background fade="0.0"]
+You're pleased to see the cat has been satisfied with the toy.
+[background fade="0.0"]
+join Petra (petra_neutral) 2
+Tell her your goodbyes, she won't see again after the flood.
+- Tell her to make memories with her cat.
+	Miles: Make a lot of memories with her, okay? Cats don't stay with us for very long.
+	Petra (petra_happy): I will.
+- Give her a hug, you wish her the best after all.
+	leave Petra
+	You give her a hug.
+	She seems to appreciate it, despite being confused at your sudden gesture.
+	join Petra (petra_wave) 2
+You say your goodbye to her, knowing that this is the last time you will ever get to talk to her.
+[background fade="0.0"]
+leave Petra
+You walk out the door, feeling a sense of unease for tomorrow.
+The storm is coming.
+[wait_input]
+jump finale/

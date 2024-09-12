@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://nxi66jbjl2ge"]
+
+[node name="RollingCredits" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Credits" type="Label" parent="."]
+layout_mode = 0
+offset_left = 296.0
+offset_top = 141.0
+offset_right = 738.0
+offset_bottom = 426.0
+text = "This game was created as a submission for the Brackeys Game Jam 2024.2
+Following the theme: \"Calm before the storm\"
+
+All art assets were created by Fleurandcrow (me)
+
+Audio was sourced from various royalty free sources:
+- credits for each sound + license they follow
+
+Tools used:
+- Game engine: Godot
+- Art program: Krita
+- Godot plugins: Dialogic, Godot-vim
+- Organisation: Pen and paper, Neovim"
+horizontal_alignment = 1
