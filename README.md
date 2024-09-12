@@ -1,2 +1,4 @@
-# BrackeysGameJam2024.2
- My submission
+# 4 days til the end
+ "4 days til the end" is my submission for the Brackeys Game Jam 2024.2, following the theme "calm before the storm"
+
+The story follows Miles, a young man with precognition powers who has predicted that in 4 days, a storm will arrive, destroying the whole city he lives in. He however, is unable to stop it due to the potential consequences if someone were to find out about his abilities. This hopeless thought gets stopped by a cat, who's owner turns out to be a cheerful naive girl named Petra. Miles, knowing the truth about the storms is also aware that pets do not escape with their owners. Her love for her cat leaves him feeling a sense of guilt, making him rethink his hopelessness. Can he guide her to make the right decisions in order to be able to bring her cat with her?
