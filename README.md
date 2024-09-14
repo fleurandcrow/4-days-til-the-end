@@ -14,11 +14,11 @@ The story follows Miles, a young man with precognition powers who has predicted 
 
 ### Linux
 
-Download the file from itch.io, extract it and run "4-days-til-the-end.exe"
+Download the file from (itch.io)[https://fleurendcrow.itch.io/4-days-til-the-end], extract it and run "4-days-til-the-end.exe"
 
 ### Windows
 
-Download the file from itch.io, extract it and run "4-days-til-the-end.x86_64"
+Download the file from (itch.io)[https://fleurendcrow.itch.io/4-days-til-the-end], extract it and run "4-days-til-the-end.x86_64"
 
 ### MacOS
 
