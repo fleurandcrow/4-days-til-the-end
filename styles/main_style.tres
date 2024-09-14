@@ -30,8 +30,12 @@ overrides = {}
 script = ExtResource("2_5ka1j")
 scene = ExtResource("5_u5w7t")
 overrides = {
+"box_margin_bottom": "20.0",
 "box_size": "Vector2(1000, 200)",
 "name_label_box_modulate": "Color(0, 0, 0, 0.6)",
+"name_label_custom_font_size": "30.0",
+"name_label_font": "\"res://assets/ui/Lora-SemiBoldItalic.ttf\"",
+"normal_font": "\"res://assets/ui/Lora-Regular.ttf\"",
 "text_size": "30.0"
 }
 
@@ -62,4 +66,4 @@ script = ExtResource("10_wrx60")
 name = "main_style"
 base_overrides = {}
 layers = Array[ExtResource("2_5ka1j")]([SubResource("Resource_g1ws4"), SubResource("Resource_bwnnm"), SubResource("Resource_3veh1"), SubResource("Resource_r0n12"), SubResource("Resource_kmts2"), SubResource("Resource_ne6r7"), SubResource("Resource_8slkg"), SubResource("Resource_fk5i4")])
-metadata/_latest_layer = 0
+metadata/_latest_layer = 3

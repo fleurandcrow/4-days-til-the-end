@@ -1,8 +1,12 @@
+[music fade="0.0" volume="0.0"]
+[music path="res://assets/audio/Downpour-Sad-Dramatic-Music-chosic.com_.ogg" fade="0.0" volume="0.0"]
 Day 2\: Are you ready to face her again?
 - Yes
 	Now go to the park.
 - No
 	You still have to go see her. It was your idea to try and save that cat, remember?
+[music fade="1.0" volume="0.0"]
+[music path="res://assets/audio/Colorful-Flowers(chosic.com).ogg" fade="1.0" volume="0.0"]
 [background arg="res://assets/art/backgrounds/park.png" fade="0.0"]
 You arrive at the park. Petra is already waiting for you.
 join Petra (petra_wave) 2
@@ -10,6 +14,8 @@ Petra (petra_wave): Miles! You came early after all!
 update Petra (petra_neutral)
 Miles: Well it's great to see Cyclops is doing well!
 Suddenly, Cyclops jumps out of Petra's hands.
+[music fade="1.0" volume="0.0"]
+[music path="res://assets/audio/Cooking-Long-Version(chosic.com).ogg" fade="1.0" volume="0.0"]
 Petra (petra_scared): Hey! Cyclops! Wait!
 The cat runs towards the other side of the street.
 Petra (petra_worried): No, Cyclops! That's dangerous!
@@ -18,6 +24,8 @@ You cross the street with her and find Cyclops with a rat in her mouth.
 [background fade="0.0"]
 Petra (petra_excusmi): Ew... Get that thing out of here...
 [background fade="0.0"]
+[music fade="1.0" volume="0.0"]
+[music path="res://assets/audio/Colorful-Flowers(chosic.com).ogg" fade="1.0" volume="0.0"]
 Petra (petra_worried): What would I do if I seriously lost you?
 - Suggest she put her confact information to the cat's collar.
 	update Petra
@@ -82,10 +90,12 @@ Petra (petra_excusmi): I've seen those around before but I'm kind of worried abo
 update Petra (petra_neutral)
 Miles: Besides, it can carry food just in case Cyclops gets hungry.
 Petra (petra_talk): I'll see if I can find a cheaper one...
-leave Petra
 label After the cat carrier part
 set {choice_count} += 2
+leave Petra
 [background fade="0.0"]
+[music fade="1.0" volume="0.0"]
+[music path="res://assets/audio/Downpour-Sad-Dramatic-Music-chosic.com_.ogg" fade="1.0" volume="0.0"]
 if {day_specific.got_carrier} == true:
 	The day has come to an end. You managed to get her on board with your idea. Good job.
 else:

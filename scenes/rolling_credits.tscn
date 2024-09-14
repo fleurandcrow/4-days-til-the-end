@@ -1,26 +1,91 @@
-[gd_scene format=3 uid="uid://nxi66jbjl2ge"]
+[gd_scene load_steps=6 format=3 uid="uid://nxi66jbjl2ge"]
 
-[node name="RollingCredits" type="Control"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[ext_resource type="Script" path="res://addons/dialogic/Modules/Background/dialogic_background.gd" id="1_lgwdw"]
+[ext_resource type="FontFile" uid="uid://8jnsuu6hncq3" path="res://assets/ui/Lora-Regular.ttf" id="2_ovbbu"]
+
+[sub_resource type="Animation" id="Animation_f1asc"]
+resource_name = "credits_anim"
+length = 10.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 10),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(208, 681), Vector2(208, -1388)]
+}
+
+[sub_resource type="Animation" id="Animation_tvc66"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(208, 681)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_upys5"]
+_data = {
+"RESET": SubResource("Animation_tvc66"),
+"credits_anim": SubResource("Animation_f1asc")
+}
+
+[node name="DialogicBackground" type="Node"]
+script = ExtResource("1_lgwdw")
 
 [node name="Credits" type="Label" parent="."]
-layout_mode = 0
-offset_left = 296.0
-offset_top = 141.0
-offset_right = 738.0
-offset_bottom = 426.0
+offset_left = 208.0
+offset_top = 681.0
+offset_right = 991.0
+offset_bottom = 1938.0
+theme_override_fonts/font = ExtResource("2_ovbbu")
+theme_override_font_sizes/font_size = 20
 text = "This game was created as a submission for the Brackeys Game Jam 2024.2
 Following the theme: \"Calm before the storm\"
 
 All art assets were created by Fleurandcrow (me)
 
 Audio was sourced from various royalty free sources:
-- credits for each sound + license they follow
+
+Powerful by MaxKoMusic | https://maxkomusic.com/
+Music promoted by https://www.chosic.com/free-music/all/
+Creative Commons CC BY-SA 3.0
+https://creativecommons.org/licenses/by-sa/3.0/
+
+A Time Forgotten by Darren Curtis | https://www.darrencurtismusic.com/
+Music promoted on https://www.chosic.com/free-music/all/
+Creative Commons Attribution 3.0 Unported (CC BY 3.0)
+https://creativecommons.org/licenses/by/3.0/
+
+Colorful Flowers by Tokyo Music Walker | https://soundcloud.com/user-356546060
+Music promoted by https://www.chosic.com/free-music/all/
+Creative Commons CC BY 3.0
+https://creativecommons.org/licenses/by/3.0/
+ 
+Downpour by Keys of Moon | https://soundcloud.com/keysofmoon
+Music promoted by https://www.chosic.com/free-music/all/
+Creative Commons CC BY 4.0
+https://creativecommons.org/licenses/by/4.0/
+
+Cooking by Alex-Productions | https://onsound.eu/
+Music promoted by https://www.chosic.com/free-music/all/
+Creative Commons CC BY 3.0
+https://creativecommons.org/licenses/by/3.0/
+
+Cat Meowing Sound Effect | https://www.chosic.com/download-audio/54581/
+
+Meow Cat 3 | https://www.chosic.com/download-audio/54585/ 
+ 
 
 Tools used:
 - Game engine: Godot
@@ -28,3 +93,8 @@ Tools used:
 - Godot plugins: Dialogic, Godot-vim
 - Organisation: Pen and paper, Neovim"
 horizontal_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Credits"]
+libraries = {
+"": SubResource("AnimationLibrary_upys5")
+}

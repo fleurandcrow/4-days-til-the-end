@@ -1,5 +1,7 @@
 It's the last day before the storm. You walk around the park, taking in the beautiful scenery before it dissapears forever.
 [background arg="res://assets/art/backgrounds/park.png" fade="0.0"]
+[music fade="1.0" volume="0.0"]
+[music path="res://assets/audio/Colorful-Flowers(chosic.com).ogg" fade="1.0" volume="0.0"]
 You feel someone behind you
 join Petra (petra_wave) 2
 Petra (petra_wave): Miles! You're here!
@@ -34,9 +36,11 @@ leave Petra
 You walk together to her place.
 [background fade="0.0"]
 You're pleased to see the cat has been satisfied with the toy.
-[background fade="0.0"]
+[background arg="res://assets/art/backgrounds/petra_house.png" fade="0.0"]
 join Petra (petra_neutral) 2
 Tell her your goodbyes, she won't see again after the flood.
+[music fade="1.0" volume="0.0"]
+[music path="res://assets/audio/Downpour-Sad-Dramatic-Music-chosic.com_.ogg" fade="1.0" volume="0.0"]
 - Tell her to make memories with her cat.
 	Miles: Make a lot of memories with her, okay? Cats don't stay with us for very long.
 	Petra (petra_happy): I will.

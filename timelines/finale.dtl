@@ -1,3 +1,5 @@
+[music fade="1.0" volume="0.0"]
+[music path="res://assets/audio/A-Time-Forgotten-MP3(chosic.com).ogg" fade="1.0" volume="0.0"]
 if {convince_count} >= 4*{choice_count}:
 	[background fade="0.0"]
 	Petra: Cyclops!
@@ -23,4 +25,4 @@ else:
 	[background fade="0.0"]
 	Miles: I couldn't do anything after all...
 Miles: This is goodbye, Petra.
-do Globals
+do Globals.show_credits()

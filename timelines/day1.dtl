@@ -1,3 +1,4 @@
+[music path="res://assets/audio/Powerful(chosic.com).ogg" fade="1.0" volume="0.0"]
 [background arg="res://assets/art/backgrounds/park.png" fade="0.0"]
 join Miles 2
 Miles (precognition): In 4 days, this city will be no more.
@@ -6,9 +7,13 @@ Miles: The flood will destroy everything.
 Miles: I've known it for quite a while, but there's nothing I can do about it.
 Miles: After all, if someone were to find out about my ability...
 Miles: The price would be too costly to pay.
-leave Miles
-[background fade="0.0"]
 Cat: meow~...
+leave Miles
+[sound path="res://assets/audio/cat-meowing(chosic.com).mp3" volume="0.0"]
+[background arg="res://assets/art/backgrounds/cyclops_intro.png" fade="0.0"]
+[wait_input]
+[music fade="1.0" volume="0.0"]
+[music path="res://assets/audio/Colorful-Flowers(chosic.com).ogg" fade="1.0" volume="0.0"]
 [wait time="3.0"]
 Miles: ...
 [background arg="res://assets/art/backgrounds/park.png" fade="0.0"]
@@ -16,6 +21,7 @@ join Petra (petra_scared) 2
 Petra (petra_scared): I'm so sorry! She keeps running away randomly!
 Petra (petra_happy): C'mere Cyclops!
 set {cat_name} = "Cyclops"
+[music path="res://assets/audio/cat-meowing(chosic.com).mp3" fade="1.0" volume="0.0" loop="false"]
 Cat: meow!
 update Petra (petra_neutral)
 The girl takes the cat and puts it on her shoulder.
@@ -83,6 +89,8 @@ Petra (petra_wave): See you tomorrow then!
 Petra walks away holding her cat.
 leave Petra
 [background fade="0.0"]
+[music fade="1.0" volume="0.0"]
+[music path="res://assets/audio/Downpour-Sad-Dramatic-Music-chosic.com_.ogg" fade="0.5" volume="0.0"]
 The day is over.
 if {convince_count} > 4*{choice_count}:
 	You managed to convincer her after all.

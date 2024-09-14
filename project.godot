@@ -36,6 +36,7 @@ directories/dtl_directory={
 "finale": "res://timelines/finale.dtl"
 }
 variables={
+"Var": 0.0,
 "cat_name": "A cat",
 "choice_count": 0,
 "convince_count": 0,
