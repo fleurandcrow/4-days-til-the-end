@@ -21,9 +21,7 @@ The cat runs towards the other side of the street.
 Petra (petra_worried): No, Cyclops! That's dangerous!
 Petra (petra_talk): Come on. let's go after her!
 You cross the street with her and find Cyclops with a rat in her mouth.
-[background fade="0.0"]
 Petra (petra_excusmi): Ew... Get that thing out of here...
-[background fade="0.0"]
 [music fade="1.0" volume="0.0"]
 [music path="res://assets/audio/Colorful-Flowers(chosic.com).ogg" fade="1.0" volume="0.0"]
 Petra (petra_worried): What would I do if I seriously lost you?
@@ -46,8 +44,6 @@ Petra (petra_happy): Cyclops, you're definitely not getting away!
 label After the choices..
 set {choice_count} += 1
 update Petra
-Miles: Let's go back to the park.
-You walk back to the park with her.
 [background arg="res://assets/art/backgrounds/park.png" fade="0.0"]
 Petra (petra_scared): Man, Cyclops loves to go outside but this kind of thing really worries me!
 Miles: Do you often just carry her in your arms like that?
@@ -93,7 +89,7 @@ Petra (petra_talk): I'll see if I can find a cheaper one...
 label After the cat carrier part
 set {choice_count} += 2
 leave Petra
-[background fade="0.0"]
+[background arg="res://assets/art/backgrounds/miles_hourglass.png" fade="0.0"]
 [music fade="1.0" volume="0.0"]
 [music path="res://assets/audio/Downpour-Sad-Dramatic-Music-chosic.com_.ogg" fade="1.0" volume="0.0"]
 if {day_specific.got_carrier} == true:

@@ -14,7 +14,7 @@ config/name="4 days til the end"
 config/description="Miles has precognition powers and has known about the upcoming flood that will destroy the city he lives in, leaving nothing but ruins behind. He is convinced he cannot do anything to help without exposing his power. Four days before the disaster, he meets Petra, a girl who cares deeply about her cat but is often reckless with it. Feeling a sense of empathy, he decides to try and steer her in the right direction so her and her cat survive the disaster awaiting them."
 run/main_scene="res://scenes/start_menu.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="res://assets/art/icon.png"
 
 [autoload]
 
@@ -65,6 +65,8 @@ text/autopauses={}
 glossary/default_case_sensitive=true
 layout/style_list=["res://styles/main_style.tres"]
 layout/default_style="res://styles/main_style.tres"
+save/autosave=true
+save/autosave_mode=2
 
 [dotnet]
 

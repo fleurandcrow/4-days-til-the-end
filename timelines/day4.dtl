@@ -1,3 +1,5 @@
+[music fade="0.0" volume="0.0"]
+[music path="res://assets/audio/Downpour-Sad-Dramatic-Music-chosic.com_.ogg" fade="0.0" volume="0.0"]
 It's the last day before the storm. You walk around the park, taking in the beautiful scenery before it dissapears forever.
 [background arg="res://assets/art/backgrounds/park.png" fade="0.0"]
 [music fade="1.0" volume="0.0"]
@@ -22,7 +24,7 @@ Petra (petra_happy): Good idea!
 leave Petra
 Petra excitedly holds your hand, dragging you to the pet store with her.
 join Petra (petra_happy) 2
-[background fade="0.0"]
+[background arg="res://assets/art/backgrounds/pet_store.png" fade="0.0"]
 Petra (petra_happy): Hmm... What toy should I get her?
 update Petra (petra_neutral)
 - A blue one.
@@ -34,11 +36,12 @@ She shows you a blue robot plushie, oddly similar to the logo of a certain game 
 Petra (petra_happy): Come to my place! You have to see what her reaction's gonna be!
 leave Petra
 You walk together to her place.
-[background fade="0.0"]
+[background arg="res://assets/art/cutscenes/cyclops_godot.png" fade="0.0"]
 You're pleased to see the cat has been satisfied with the toy.
+[wait_input]
 [background arg="res://assets/art/backgrounds/petra_house.png" fade="0.0"]
 join Petra (petra_neutral) 2
-Tell her your goodbyes, she won't see again after the flood.
+Tell her your goodbyes, you won't see her again after the flood.
 [music fade="1.0" volume="0.0"]
 [music path="res://assets/audio/Downpour-Sad-Dramatic-Music-chosic.com_.ogg" fade="1.0" volume="0.0"]
 - Tell her to make memories with her cat.
@@ -50,7 +53,7 @@ Tell her your goodbyes, she won't see again after the flood.
 	She seems to appreciate it, despite being confused at your sudden gesture.
 	join Petra (petra_wave) 2
 You say your goodbye to her, knowing that this is the last time you will ever get to talk to her.
-[background fade="0.0"]
+[background arg="res://assets/art/backgrounds/miles_hourglass.png" fade="0.0"]
 leave Petra
 You walk out the door, feeling a sense of unease for tomorrow.
 The storm is coming.

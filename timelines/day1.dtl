@@ -10,11 +10,10 @@ Miles: The price would be too costly to pay.
 Cat: meow~...
 leave Miles
 [sound path="res://assets/audio/cat-meowing(chosic.com).mp3" volume="0.0"]
-[background arg="res://assets/art/backgrounds/cyclops_intro.png" fade="0.0"]
+[background arg="res://assets/art/cutscenes/cyclops_intro.png" fade="0.0"]
 [wait_input]
 [music fade="1.0" volume="0.0"]
 [music path="res://assets/audio/Colorful-Flowers(chosic.com).ogg" fade="1.0" volume="0.0"]
-[wait time="3.0"]
 Miles: ...
 [background arg="res://assets/art/backgrounds/park.png" fade="0.0"]
 join Petra (petra_scared) 2
@@ -88,7 +87,7 @@ Miles: That's fine with me.
 Petra (petra_wave): See you tomorrow then!
 Petra walks away holding her cat.
 leave Petra
-[background fade="0.0"]
+[background arg="res://assets/art/backgrounds/miles_hourglass.png" fade="0.0"]
 [music fade="1.0" volume="0.0"]
 [music path="res://assets/audio/Downpour-Sad-Dramatic-Music-chosic.com_.ogg" fade="0.5" volume="0.0"]
 The day is over.
@@ -99,4 +98,5 @@ elif {convince_count} >= 2*{choice_count}:
 else:
 	Petra got your number but you still have a long way to go.
 [wait_input]
+[music fade="0.0" volume="0.0"]
 jump day2/

@@ -1,14 +1,15 @@
-[gd_scene load_steps=10 format=3 uid="uid://d0xhjjf3mf28d"]
+[gd_scene load_steps=11 format=3 uid="uid://d0xhjjf3mf28d"]
 
 [ext_resource type="Script" path="res://scripts/new_game_button.gd" id="1_c6sp8"]
 [ext_resource type="Texture2D" uid="uid://e8m63wft4xat" path="res://assets/art/backgrounds/park_flooded.png" id="1_oc1i0"]
 [ext_resource type="FontFile" uid="uid://8jnsuu6hncq3" path="res://assets/ui/Lora-Regular.ttf" id="2_32h1g"]
 [ext_resource type="Script" path="res://scripts/load_previous_game_button.gd" id="2_hf65s"]
 [ext_resource type="Script" path="res://scripts/quit_button.gd" id="3_wla0m"]
-[ext_resource type="Script" path="res://scripts/settings_button.gd" id="4_lddc7"]
-[ext_resource type="PackedScene" uid="uid://b27n8if8hwg04" path="res://scenes/menu.tscn" id="5_4cjdk"]
+[ext_resource type="PackedScene" uid="uid://d0xhjjf3mf28d" path="res://scenes/start_menu.tscn" id="5_4cjdk"]
+[ext_resource type="Script" path="res://scenes/credits_button.gd" id="7_1alqa"]
 [ext_resource type="FontFile" uid="uid://bbo6xsm8bitgi" path="res://assets/ui/Lora-SemiBoldItalic.ttf" id="7_4ce17"]
 [ext_resource type="AudioStream" uid="uid://cu4gpyss6w6si" path="res://assets/audio/Powerful(chosic.com).ogg" id="7_l1noi"]
+[ext_resource type="Script" path="res://scenes/back_button.gd" id="10_c578v"]
 
 [node name="StartMenu" type="Control"]
 layout_mode = 3
@@ -74,35 +75,17 @@ script = ExtResource("2_hf65s")
 
 [node name="QuitButton" type="Button" parent="StartMenu"]
 layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
+anchors_preset = 2
 anchor_top = 1.0
-anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -69.5
-offset_top = -80.0
-offset_right = 69.5
-offset_bottom = -46.0
-grow_horizontal = 2
+offset_top = -72.0
+offset_right = 139.0
+offset_bottom = -38.0
 grow_vertical = 0
 theme_override_fonts/font = ExtResource("2_32h1g")
 text = "Quit"
 flat = true
 script = ExtResource("3_wla0m")
-
-[node name="SettingsButton" type="Button" parent="StartMenu"]
-layout_mode = 1
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_top = -80.0
-offset_right = 139.0
-offset_bottom = -46.0
-grow_vertical = 0
-theme_override_fonts/font = ExtResource("2_32h1g")
-text = "Settings"
-flat = true
-script = ExtResource("4_lddc7")
 
 [node name="CreditsButton" type="Button" parent="StartMenu"]
 layout_mode = 1
@@ -119,6 +102,7 @@ grow_vertical = 0
 theme_override_fonts/font = ExtResource("2_32h1g")
 text = "Credits"
 flat = true
+script = ExtResource("7_1alqa")
 
 [node name="Title" type="Label" parent="StartMenu"]
 layout_mode = 1
@@ -134,15 +118,127 @@ theme_override_fonts/font = ExtResource("7_4ce17")
 theme_override_font_sizes/font_size = 80
 text = "4 days til the end"
 
-[node name="Menu" parent="." instance=ExtResource("5_4cjdk")]
+[node name="Label" type="Label" parent="StartMenu"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -234.5
+offset_top = -23.0
+offset_right = 234.5
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_32h1g")
+text = "Protip: Use the esc key to exit the game and go back the start menu"
+
+[node name="Menu" type="Control" parent="."]
 visible = false
 layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Menu" parent="Menu" instance=ExtResource("5_4cjdk")]
+layout_mode = 1
+
+[node name="BackButton" type="Button" parent="Menu"]
+layout_mode = 0
+offset_right = 42.0
+offset_bottom = 38.0
+text = "<"
+script = ExtResource("10_c578v")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("7_l1noi")
 autoplay = true
 
+[node name="CreditsMenu" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="CreditsMenu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BackButton" type="Button" parent="CreditsMenu"]
+layout_mode = 0
+offset_right = 42.0
+offset_bottom = 38.0
+text = "<"
+script = ExtResource("10_c578v")
+
+[node name="Credits2" type="RichTextLabel" parent="CreditsMenu"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -404.0
+offset_top = -224.0
+offset_right = 404.0
+offset_bottom = 224.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "This game was created as a submission for the Brackeys Game Jam 2024.2
+Following the theme: \"Calm before the storm\"
+
+All art assets were created by Fleurandcrow (me)
+
+Audio was sourced from various royalty free sources:
+
+Powerful by MaxKoMusic | https://maxkomusic.com/
+Music promoted by https://www.chosic.com/free-music/all/
+Creative Commons CC BY-SA 3.0
+https://creativecommons.org/licenses/by-sa/3.0/
+
+A Time Forgotten by Darren Curtis | https://www.darrencurtismusic.com/
+Music promoted on https://www.chosic.com/free-music/all/
+Creative Commons Attribution 3.0 Unported (CC BY 3.0)
+https://creativecommons.org/licenses/by/3.0/
+
+Colorful Flowers by Tokyo Music Walker | https://soundcloud.com/user-356546060
+Music promoted by https://www.chosic.com/free-music/all/
+Creative Commons CC BY 3.0
+https://creativecommons.org/licenses/by/3.0/
+ 
+Downpour by Keys of Moon | https://soundcloud.com/keysofmoon
+Music promoted by https://www.chosic.com/free-music/all/
+Creative Commons CC BY 4.0
+https://creativecommons.org/licenses/by/4.0/
+
+Cooking by Alex-Productions | https://onsound.eu/
+Music promoted by https://www.chosic.com/free-music/all/
+Creative Commons CC BY 3.0
+https://creativecommons.org/licenses/by/3.0/
+
+Cat Meowing Sound Effect | https://www.chosic.com/download-audio/54581/
+
+Meow Cat 3 | https://www.chosic.com/download-audio/54585/ 
+ 
+
+Tools used:
+- Game engine: Godot
+- Art program: Krita
+- Godot plugins: Dialogic, Godot-vim
+- Organisation: Pen and paper, Neovim"
+
 [connection signal="pressed" from="StartMenu/NewGameButton" to="StartMenu/NewGameButton" method="_on_pressed"]
 [connection signal="pressed" from="StartMenu/LoadPreviousGameButton2" to="StartMenu/LoadPreviousGameButton2" method="_on_pressed"]
 [connection signal="pressed" from="StartMenu/QuitButton" to="StartMenu/QuitButton" method="_on_pressed"]
-[connection signal="pressed" from="StartMenu/SettingsButton" to="StartMenu/SettingsButton" method="_on_pressed"]
+[connection signal="pressed" from="StartMenu/CreditsButton" to="StartMenu/CreditsButton" method="_on_pressed"]
+[connection signal="pressed" from="Menu/BackButton" to="Menu/BackButton" method="_on_pressed"]
+[connection signal="pressed" from="CreditsMenu/BackButton" to="CreditsMenu/BackButton" method="_on_pressed"]

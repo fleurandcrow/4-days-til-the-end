@@ -1,28 +1,30 @@
 [music fade="1.0" volume="0.0"]
 [music path="res://assets/audio/A-Time-Forgotten-MP3(chosic.com).ogg" fade="1.0" volume="0.0"]
 if {convince_count} >= 4*{choice_count}:
-	[background fade="0.0"]
+	[background arg="res://assets/art/cutscenes/good_end.png" fade="0.0"]
 	Petra: Cyclops!
 	Petra: Thank goodness you're okay!
 	Petra: Let's go before it's too late.
 	[wait_input]
-	[background fade="0.0"]
+	[background arg="res://assets/art/cutscenes/miles_end.png" fade="0.0"]
 	Miles: I've done what I could to keep you happy during these tough times.
 elif {convince_count} >= 3*{choice_count}:
-	[background fade="0.0"]
+	[background arg="res://assets/art/cutscenes/ok_end.png" fade="0.0"]
 	Petra: It's okay, Cyclops.
 	Petra: I'll get you to the vet as soon as I can.
 	Petra: Just bare with me for now...
 	[wait_input]
-	[background fade="0.0"]
+	[background arg="res://assets/art/cutscenes/miles_end.png" fade="0.0"]
 	Miles: I want you to know that you've changed me a lot, even if I couldn't do much to change this fate.
 else:
-	[background fade="0.0"]
+	[background arg="res://assets/art/cutscenes/bad_end.png" fade="0.0"]
 	Petra: Cyclops...
 	Petra: I looked everywhere but I can't find her...
 	Petra: Cyclops..! Cyclops!
 	[wait_input]
-	[background fade="0.0"]
+	[background arg="res://assets/art/cutscenes/miles_end.png" fade="0.0"]
 	Miles: I couldn't do anything after all...
 Miles: This is goodbye, Petra.
+[wait_input]
 do Globals.show_credits()
+[end_timeline]
