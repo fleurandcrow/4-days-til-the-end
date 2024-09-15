@@ -50,5 +50,5 @@ For more information, visit [CC BY-NC-ND 4.0](https://creativecommons.org/licens
 
 ### Audio credits
 
-None of the music and sounds effects used in this project have been sourced from royalty free sources and were not created by the project's creator. For more information, check out the Credits.txt file
+All of the music and sounds effects used in this project have been sourced from royalty free sources and were not created by the project's creator. For more information, check out the Credits.txt file
 
