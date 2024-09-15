@@ -14,11 +14,11 @@ The story follows Miles, a young man with precognition powers who has predicted 
 
 ### Linux
 
-Download the file from (itch.io)[https://fleurendcrow.itch.io/4-days-til-the-end], extract it and run "4-days-til-the-end.exe"
+Download the file from [itch.io](https://fleurendcrow.itch.io/4-days-til-the-end), extract it and run "4-days-til-the-end.exe"
 
 ### Windows
 
-Download the file from (itch.io)[https://fleurendcrow.itch.io/4-days-til-the-end], extract it and run "4-days-til-the-end.x86_64"
+Download the file from [itch.io](https://fleurendcrow.itch.io/4-days-til-the-end), extract it and run "4-days-til-the-end.x86_64"
 
 ### MacOS
 
@@ -32,13 +32,13 @@ Found a bug? Create an issue!
 
 ### Code license
 
-The (Dialogic)[https://dialogic.pro/] plugin was used in this project. The plugin itself uses a different license (Dialogic uses (MIT)[https://choosealicense.com/licenses/mit/]) than the rest of the project.
+The [Dialogic](https://dialogic.pro/) plugin was used in this project. The plugin itself uses a different license (Dialogic uses [MIT](https://choosealicense.com/licenses/mit/)) than the rest of the project.
 
 The code of this project (located in /scripts) is licensed under the GNU GPL v3.0
 
 It can be modified and redistributed as long as the source code is made available with all the changes made.
 
-For more information, visit (GNU GPL v3.0)[https://choosealicense.com/licenses/gpl-3.0/]
+For more information, visit [GNU GPL v3.0](https://choosealicense.com/licenses/gpl-3.0/)
 
 ### Art license
 
@@ -46,7 +46,7 @@ All art assets of this project are licensed under the CC BY-NC-ND 4.0 license.
 
 It cannot be redistributed after being modified and cannot be redistributed commercially. Additionally, all redistributions must give appropriate credit to the original creator.
 
-For more information, visit (CC BY-NC-ND 4.0)[https://creativecommons.org/licenses/by-nc-nd/4.0/]
+For more information, visit [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 ### Audio credits
 
