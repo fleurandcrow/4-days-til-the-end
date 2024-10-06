@@ -1,4 +1,5 @@
 [music path="res://assets/audio/Powerful(chosic.com).ogg" fade="1.0" volume="0.0"]
+do Globals.play_audio("")
 [background arg="res://assets/art/backgrounds/park.png" fade="0.0"]
 join Miles 2
 Miles (precognition): In 4 days, this city will be no more.
