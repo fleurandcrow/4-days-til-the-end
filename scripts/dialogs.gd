@@ -1,9 +1,9 @@
 extends Node
 
-@onready var audios = [
-		get_node("ATimeForgotten"), get_node("Powerful"), get_node("ColorfulFlowers"),
-		get_node("Cooking"), get_node("Downpour"),
-		]
+@onready var audios = {
+		"ATimeForgotten" : get_node("ATimeForgotten"), "Powerful" : get_node("Powerful"), "ColorfulFlowers" : get_node("ColorfulFlowers"),
+		"Cooking" : get_node("Cooking"), "Downpour" : get_node("Downpour"),
+		}
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	if Globals.new_game == true:

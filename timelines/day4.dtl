@@ -1,9 +1,9 @@
-[music fade="0.0" volume="0.0"]
-[music path="res://assets/audio/Downpour-Sad-Dramatic-Music-chosic.com_.ogg" fade="0.0" volume="0.0"]
+do Globals.stop_audio("Downpour")
+do Globals.play_audio("Downpour")
 It's the last day before the storm. You walk around the park, taking in the beautiful scenery before it dissapears forever.
 [background arg="res://assets/art/backgrounds/park.png" fade="0.0"]
-[music fade="1.0" volume="0.0"]
-[music path="res://assets/audio/Colorful-Flowers(chosic.com).ogg" fade="1.0" volume="0.0"]
+do Globals.stop_audio("Downpour")
+do Globals.play_audio("ColorfulFlowers")
 You feel someone behind you
 join Petra (petra_wave) 2
 Petra (petra_wave): Miles! You're here!
@@ -44,6 +44,8 @@ join Petra (petra_neutral) 2
 Tell her your goodbyes, you won't see her again after the flood.
 [music fade="1.0" volume="0.0"]
 [music path="res://assets/audio/Downpour-Sad-Dramatic-Music-chosic.com_.ogg" fade="1.0" volume="0.0"]
+do Globals.stop_audio("ColorfulFlowers")
+do Globals.play_audio("Downpour")
 - Tell her to make memories with her cat.
 	Miles: Make a lot of memories with her, okay? Cats don't stay with us for very long.
 	Petra (petra_happy): I will.

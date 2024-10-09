@@ -1,8 +1,8 @@
-[music fade="0.0" volume="0.0"]
-[music path="res://assets/audio/Downpour-Sad-Dramatic-Music-chosic.com_.ogg" fade="0.0" volume="0.0"]
+do Globals.stop_audio("Downpour")
+do Globals.play_audio("Downpour")
 Day 3\: You meet with her at the park again.
-[music fade="1.0" volume="0.0"]
-[music path="res://assets/audio/Colorful-Flowers(chosic.com).ogg" fade="1.0" volume="0.0"]
+do Globals.stop_audio("Downpour")
+do Globals.play_audio("ColorfulFlowers")
 [background arg="res://assets/art/backgrounds/park.png" fade="0.0"]
 join Petra (petra_happy) 2
 Petra (petra_happy): Miles! Did you know that Cyclops gets super clingy when she's sick?
@@ -42,8 +42,8 @@ Miles: Enjoy every moment with her, alright?
 leave Petra
 You walk away, questioning whether it was the right thing to say.
 [background arg="res://assets/art/backgrounds/miles_hourglass.png" fade="0.0"]
-[music fade="1.0" volume="0.0"]
-[music path="res://assets/audio/Downpour-Sad-Dramatic-Music-chosic.com_.ogg" fade="1.0" volume="0.0"]
+do Globals.stop_audio("ColorfulFlowers")
+do Globals.play_audio("Downpour")
 The day is over. Tomorrow will be the last day of calm.
 [wait_input]
 jump day4/

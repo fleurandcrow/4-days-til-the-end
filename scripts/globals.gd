@@ -2,15 +2,17 @@ extends Node
 
 var new_game = true
 var vol := -14.0
-var audios = []
+var audios = {}
 
 func show_credits():
 	get_tree().change_scene_to_file("res://scenes/rolling_credits.tscn")
 
-func play_audio(audio):
-	audio.playing = true
+func play_audio(key):
+	# Plays the audio
+	audios[key].playing = true # Takes a dictionnary
 
-func stop_audio(audio):
-	audio.playing = false
+func stop_audio(key):
+	# Stops playing the audio
+	audios[key].playing = false # Takes a dictionnary
 
 # Audio controls
