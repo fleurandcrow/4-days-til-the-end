@@ -42,8 +42,6 @@ You're pleased to see the cat has been satisfied with the toy.
 [background arg="res://assets/art/backgrounds/petra_house.png" fade="0.0"]
 join Petra (petra_neutral) 2
 Tell her your goodbyes, you won't see her again after the flood.
-[music fade="1.0" volume="0.0"]
-[music path="res://assets/audio/Downpour-Sad-Dramatic-Music-chosic.com_.ogg" fade="1.0" volume="0.0"]
 do Globals.stop_audio("ColorfulFlowers")
 do Globals.play_audio("Downpour")
 - Tell her to make memories with her cat.
