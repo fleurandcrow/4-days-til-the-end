@@ -1,5 +1,3 @@
-do Globals.stop_audio("Downpour")
-do Globals.play_audio("Downpour")
 Day 3\: You meet with her at the park again.
 do Globals.stop_audio("Downpour")
 do Globals.play_audio("ColorfulFlowers")

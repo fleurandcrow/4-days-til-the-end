@@ -98,5 +98,4 @@ elif {convince_count} >= 2*{choice_count}:
 else:
 	Petra got your number but you still have a long way to go.
 [wait_input]
-do Globals.stop_audio("Downpour")
 jump day2/

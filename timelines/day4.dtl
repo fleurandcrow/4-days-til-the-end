@@ -1,8 +1,6 @@
-do Globals.stop_audio("Downpour")
-do Globals.play_audio("Downpour")
 It's the last day before the storm. You walk around the park, taking in the beautiful scenery before it dissapears forever.
-[background arg="res://assets/art/backgrounds/park.png" fade="0.0"]
 do Globals.stop_audio("Downpour")
+[background arg="res://assets/art/backgrounds/park.png" fade="0.0"]
 do Globals.play_audio("ColorfulFlowers")
 You feel someone behind you
 join Petra (petra_wave) 2
