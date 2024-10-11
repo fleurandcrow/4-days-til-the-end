@@ -5,6 +5,7 @@ var vol := -14.0
 var audios = {}
 
 func show_credits():
+	# Change scene to credits scene
 	get_tree().change_scene_to_file("res://scenes/rolling_credits.tscn")
 
 func play_audio(key):
