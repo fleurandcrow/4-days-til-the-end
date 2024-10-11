@@ -1,11 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://d0xhjjf3mf28d"]
+[gd_scene load_steps=10 format=3 uid="uid://d0xhjjf3mf28d"]
 
 [ext_resource type="Script" path="res://scripts/new_game_button.gd" id="1_c6sp8"]
 [ext_resource type="Texture2D" uid="uid://e8m63wft4xat" path="res://assets/art/backgrounds/park_flooded.png" id="1_oc1i0"]
 [ext_resource type="FontFile" uid="uid://8jnsuu6hncq3" path="res://assets/ui/Lora-Regular.ttf" id="2_32h1g"]
 [ext_resource type="Script" path="res://scripts/load_previous_game_button.gd" id="2_hf65s"]
 [ext_resource type="Script" path="res://scripts/quit_button.gd" id="3_wla0m"]
-[ext_resource type="PackedScene" uid="uid://d0xhjjf3mf28d" path="res://scenes/start_menu.tscn" id="5_4cjdk"]
 [ext_resource type="Script" path="res://scenes/credits_button.gd" id="7_1alqa"]
 [ext_resource type="FontFile" uid="uid://bbo6xsm8bitgi" path="res://assets/ui/Lora-SemiBoldItalic.ttf" id="7_4ce17"]
 [ext_resource type="AudioStream" uid="uid://cu4gpyss6w6si" path="res://assets/audio/Powerful(chosic.com).ogg" id="7_l1noi"]
@@ -133,25 +132,6 @@ grow_vertical = 0
 theme_override_fonts/font = ExtResource("2_32h1g")
 text = "Protip: Use the esc key to exit the game and go back the start menu"
 
-[node name="Menu" type="Control" parent="."]
-visible = false
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="Menu" parent="Menu" instance=ExtResource("5_4cjdk")]
-layout_mode = 1
-
-[node name="BackButton" type="Button" parent="Menu"]
-layout_mode = 0
-offset_right = 42.0
-offset_bottom = 38.0
-text = "<"
-script = ExtResource("10_c578v")
-
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("7_l1noi")
 autoplay = true
@@ -240,5 +220,4 @@ Tools used:
 [connection signal="pressed" from="StartMenu/LoadPreviousGameButton2" to="StartMenu/LoadPreviousGameButton2" method="_on_pressed"]
 [connection signal="pressed" from="StartMenu/QuitButton" to="StartMenu/QuitButton" method="_on_pressed"]
 [connection signal="pressed" from="StartMenu/CreditsButton" to="StartMenu/CreditsButton" method="_on_pressed"]
-[connection signal="pressed" from="Menu/BackButton" to="Menu/BackButton" method="_on_pressed"]
 [connection signal="pressed" from="CreditsMenu/BackButton" to="CreditsMenu/BackButton" method="_on_pressed"]

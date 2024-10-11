@@ -1,5 +1,5 @@
-[music fade="1.0" volume="0.0"]
-[music path="res://assets/audio/A-Time-Forgotten-MP3(chosic.com).ogg" fade="1.0" volume="0.0"]
+do Globals.stop_audio("Downpour")
+do Globals.play_audio("ATimeForgotten")
 if {convince_count} >= 4*{choice_count}:
 	[background arg="res://assets/art/cutscenes/good_end.png" fade="0.0"]
 	Petra: Cyclops!

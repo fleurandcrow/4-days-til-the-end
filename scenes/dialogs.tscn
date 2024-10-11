@@ -1,6 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://70o004q575lo"]
+[gd_scene load_steps=7 format=3 uid="uid://70o004q575lo"]
 
 [ext_resource type="Script" path="res://scripts/dialogs.gd" id="1_7kbqn"]
+[ext_resource type="AudioStream" uid="uid://jrecpdue7l58" path="res://assets/audio/A-Time-Forgotten-MP3(chosic.com).ogg" id="2_sgsnv"]
+[ext_resource type="AudioStream" uid="uid://cu4gpyss6w6si" path="res://assets/audio/Powerful(chosic.com).ogg" id="3_iskem"]
+[ext_resource type="AudioStream" uid="uid://qbhj4fxg2w4x" path="res://assets/audio/Colorful-Flowers(chosic.com).ogg" id="4_r0r5m"]
+[ext_resource type="AudioStream" uid="uid://bep7puex0ibml" path="res://assets/audio/Cooking-Long-Version(chosic.com).ogg" id="5_eefmp"]
+[ext_resource type="AudioStream" uid="uid://dkjkojl2200km" path="res://assets/audio/Downpour-Sad-Dramatic-Music-chosic.com_.ogg" id="6_s8p6l"]
 
 [node name="Dialogs" type="Node"]
 script = ExtResource("1_7kbqn")
@@ -13,3 +18,18 @@ offset_top = -23.0
 offset_right = 124.0
 grow_vertical = 0
 text = "Press esc to exit"
+
+[node name="ATimeForgotten" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_sgsnv")
+
+[node name="Powerful" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_iskem")
+
+[node name="ColorfulFlowers" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_r0r5m")
+
+[node name="Cooking" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_eefmp")
+
+[node name="Downpour" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_s8p6l")

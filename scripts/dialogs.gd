@@ -1,5 +1,10 @@
 extends Node
 
+# Get AudioStreamPlayer nodes
+@onready var audios = {
+		"ATimeForgotten" : get_node("ATimeForgotten"), "Powerful" : get_node("Powerful"), "ColorfulFlowers" : get_node("ColorfulFlowers"),
+		"Cooking" : get_node("Cooking"), "Downpour" : get_node("Downpour"),
+		}
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -9,6 +14,7 @@ func _ready():
 	else:
 		# Start most recent save
 		Dialogic.Save.load()
+	Globals.audios = audios
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
